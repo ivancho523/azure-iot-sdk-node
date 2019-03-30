@@ -12,6 +12,7 @@ import { RetryPolicy } from './retry_policy';
 export class RetryOperation {
   private _policy: RetryPolicy;
   private _retryCount: number = 0;
+  // tslint:disable-next-line
   private _currentTimeout: any;
   private _totalRetryTime: number = 0;
   private _maxTimeout: number;
@@ -37,9 +38,6 @@ export class RetryOperation {
       this._retryCount++;
       /*Codes_SRS_NODE_COMMON_RETRY_OPERATION_16_001: [The `operation` function should be called at every retry.]*/
       operation((err, result, response) => {
-        if (this._currentTimeout) {
-            this._currentTimeout = 0;
-        }
         if (err) {
           /*Codes_SRS_NODE_COMMON_RETRY_OPERATION_16_003: [If the `operation` fails with an error the `retry` method should determine whether to retry or not using the `shouldRetry` method of the policy passed to the constructor.]*/
           if (this._policy.shouldRetry(err)) {
