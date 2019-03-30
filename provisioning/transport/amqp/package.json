@@ -11,14 +11,12 @@
     "azure-iot-amqp-base": "2.2.4",
     "azure-iot-common": "1.9.4",
     "azure-iot-provisioning-device": "1.5.4",
-    "bluebird": "^3.5.2",
     "buffer-builder": "^0.2.0",
     "debug": "^4.1.1",
     "machina": "^4.0.2",
     "uuid": "^3.3.2"
   },
   "devDependencies": {
-    "@types/bluebird": "ts2.2",
     "@types/node": "^9.3.0",
     "chai": "^4.2.0",
     "istanbul": "^0.4.5",
