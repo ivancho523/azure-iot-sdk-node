@@ -15,6 +15,9 @@ export class ArgumentError extends Error {
     this.name = 'ArgumentError';
     this.message = message;
     Error.captureStackTrace(this, this.constructor);
+    // Set the prototype explicitly.
+    // https://github.com/Microsoft/TypeScript-wiki/blob/master/Breaking-Changes.md#extending-built-ins-like-error-array-and-map-may-no-longer-work
+    Object.setPrototypeOf(this, ArgumentError.prototype);
   }
 }
 
@@ -29,6 +32,7 @@ export class ArgumentOutOfRangeError extends Error {
     this.name = 'ArgumentOutOfRangeError';
     this.message = message;
     Error.captureStackTrace(this, this.constructor);
+    Object.setPrototypeOf(this, ArgumentOutOfRangeError.prototype);
   }
 }
 
@@ -43,6 +47,7 @@ export class DeviceMaximumQueueDepthExceededError extends Error {
     this.name = 'DeviceMaximumQueueDepthExceededError';
     this.message = message;
     Error.captureStackTrace(this, this.constructor);
+    Object.setPrototypeOf(this, DeviceMaximumQueueDepthExceededError.prototype);
   }
 }
 
@@ -57,6 +62,7 @@ export class DeviceNotFoundError extends Error {
     this.name = 'DeviceNotFoundError';
     this.message = message;
     Error.captureStackTrace(this, this.constructor);
+    Object.setPrototypeOf(this, DeviceNotFoundError.prototype);
   }
 }
 
@@ -71,6 +77,7 @@ export class FormatError extends Error {
     this.name = 'FormatError';
     this.message = message;
     Error.captureStackTrace(this, this.constructor);
+    Object.setPrototypeOf(this, FormatError.prototype);
   }
 }
 
@@ -85,6 +92,7 @@ export class UnauthorizedError extends Error {
     this.name = 'UnauthorizedError';
     this.message = message;
     Error.captureStackTrace(this, this.constructor);
+    Object.setPrototypeOf(this, UnauthorizedError.prototype);
   }
 }
 
@@ -99,6 +107,7 @@ export class NotImplementedError extends Error {
     this.name = 'NotImplementedError';
     this.message = message;
     Error.captureStackTrace(this, this.constructor);
+    Object.setPrototypeOf(this, NotImplementedError.prototype);
   }
 }
 
@@ -113,6 +122,7 @@ export class NotConnectedError extends Error {
     this.name = 'NotConnectedError';
     this.message = message;
     Error.captureStackTrace(this, this.constructor);
+    Object.setPrototypeOf(this, NotConnectedError.prototype);
   }
 }
 
@@ -128,6 +138,7 @@ export class IotHubQuotaExceededError extends Error {
     this.name = 'IotHubQuotaExceededError';
     this.message = message;
     Error.captureStackTrace(this, this.constructor);
+    Object.setPrototypeOf(this, IotHubQuotaExceededError.prototype);
   }
 }
 
@@ -142,6 +153,7 @@ export class MessageTooLargeError extends Error {
     this.name = 'MessageTooLargeError';
     this.message = message;
     Error.captureStackTrace(this, this.constructor);
+    Object.setPrototypeOf(this, MessageTooLargeError.prototype);
   }
 }
 
@@ -156,6 +168,7 @@ export class InternalServerError extends Error {
     this.name = 'InternalServerError';
     this.message = message;
     Error.captureStackTrace(this, this.constructor);
+    Object.setPrototypeOf(this, InternalServerError.prototype);
   }
 }
 
@@ -170,6 +183,7 @@ export class ServiceUnavailableError extends Error {
     this.name = 'ServiceUnavailableError';
     this.message = message;
     Error.captureStackTrace(this, this.constructor);
+    Object.setPrototypeOf(this, ServiceUnavailableError.prototype);
   }
 }
 
@@ -184,6 +198,7 @@ export class IotHubNotFoundError extends Error {
     this.name = 'IotHubNotFoundError';
     this.message = message;
     Error.captureStackTrace(this, this.constructor);
+    Object.setPrototypeOf(this, IotHubNotFoundError.prototype);
   }
 }
 
@@ -198,6 +213,7 @@ export class IoTHubSuspendedError extends Error {
     this.name = 'IoTHubSuspendedError';
     this.message = message;
     Error.captureStackTrace(this, this.constructor);
+    Object.setPrototypeOf(this, IoTHubSuspendedError.prototype);
   }
 }
 
@@ -212,6 +228,7 @@ export class JobNotFoundError extends Error {
     this.name = 'JobNotFoundError';
     this.message = message;
     Error.captureStackTrace(this, this.constructor);
+    Object.setPrototypeOf(this, JobNotFoundError.prototype);
   }
 }
 
@@ -226,6 +243,7 @@ export class TooManyDevicesError extends Error {
     this.name = 'TooManyDevicesError';
     this.message = message;
     Error.captureStackTrace(this, this.constructor);
+    Object.setPrototypeOf(this, TooManyDevicesError.prototype);
   }
 }
 
@@ -241,6 +259,7 @@ export class ThrottlingError extends Error {
     this.name = 'ThrottlingError';
     this.message = message;
     Error.captureStackTrace(this, this.constructor);
+    Object.setPrototypeOf(this, ThrottlingError.prototype);
   }
 }
 
@@ -255,6 +274,7 @@ export class DeviceAlreadyExistsError extends Error {
     this.name = 'DeviceAlreadyExistsError';
     this.message = message;
     Error.captureStackTrace(this, this.constructor);
+    Object.setPrototypeOf(this, DeviceAlreadyExistsError.prototype);
   }
 }
 
@@ -269,6 +289,7 @@ export class DeviceMessageLockLostError extends Error {
     this.name = 'DeviceMessageLockLostError';
     this.message = message;
     Error.captureStackTrace(this, this.constructor);
+    Object.setPrototypeOf(this, DeviceMessageLockLostError.prototype);
   }
 }
 
@@ -283,6 +304,7 @@ export class InvalidEtagError extends Error {
     this.name = 'InvalidEtagError';
     this.message = message;
     Error.captureStackTrace(this, this.constructor);
+    Object.setPrototypeOf(this, InvalidEtagError.prototype);
   }
 }
 
@@ -297,6 +319,7 @@ export class InvalidOperationError extends Error {
     this.name = 'InvalidOperationError';
     this.message = message;
     Error.captureStackTrace(this, this.constructor);
+    Object.setPrototypeOf(this, InvalidOperationError.prototype);
   }
 }
 
@@ -311,6 +334,7 @@ export class PreconditionFailedError extends Error {
     this.name = 'PreconditionFailedError';
     this.message = message;
     Error.captureStackTrace(this, this.constructor);
+    Object.setPrototypeOf(this, PreconditionFailedError.prototype);
   }
 }
 
@@ -325,6 +349,7 @@ export class TimeoutError extends Error {
     this.name = 'TimeoutError';
     this.message = message;
     Error.captureStackTrace(this, this.constructor);
+    Object.setPrototypeOf(this, TimeoutError.prototype);
   }
 }
 
@@ -339,6 +364,7 @@ export class BadDeviceResponseError extends Error {
     this.name = 'BadDeviceResponseError';
     this.message = message;
     Error.captureStackTrace(this, this.constructor);
+    Object.setPrototypeOf(this, BadDeviceResponseError.prototype);
   }
 }
 
@@ -354,6 +380,7 @@ export class GatewayTimeoutError extends Error {
     this.name = 'GatewayTimeoutError';
     this.message = message;
     Error.captureStackTrace(this, this.constructor);
+    Object.setPrototypeOf(this, GatewayTimeoutError.prototype);
   }
 }
 
@@ -368,6 +395,7 @@ export class DeviceTimeoutError extends Error {
     this.name = 'DeviceTimeoutError';
     this.message = message;
     Error.captureStackTrace(this, this.constructor);
+    Object.setPrototypeOf(this, DeviceTimeoutError.prototype);
   }
 }
 
@@ -383,6 +411,7 @@ export class CloudToDeviceDetachedError extends Error {
     this.name = 'CloudToDeviceDetachedError';
     this.message = message;
     Error.captureStackTrace(this, this.constructor);
+    Object.setPrototypeOf(this, CloudToDeviceDetachedError.prototype);
   }
 }
 
@@ -398,6 +427,7 @@ export class DeviceMethodsDetachedError extends Error {
     this.name = 'DeviceMethodsDetachedError';
     this.message = message;
     Error.captureStackTrace(this, this.constructor);
+    Object.setPrototypeOf(this, DeviceMethodsDetachedError.prototype);
   }
 }
 
@@ -413,6 +443,7 @@ export class TwinDetachedError extends Error {
     this.name = 'TwinDetachedError';
     this.message = message;
     Error.captureStackTrace(this, this.constructor);
+    Object.setPrototypeOf(this, TwinDetachedError.prototype);
   }
 }
 
@@ -428,6 +459,7 @@ export class TwinRequestError extends Error {
     this.name = 'TwinRequestError';
     this.message = message;
     Error.captureStackTrace(this, this.constructor);
+    Object.setPrototypeOf(this, TwinRequestError.prototype);
   }
 }
 
@@ -442,6 +474,7 @@ export class OperationCancelledError extends Error {
     this.name = 'OperationCancelledError';
     this.message = message;
     Error.captureStackTrace(this, this.constructor);
+    Object.setPrototypeOf(this, OperationCancelledError.prototype);
   }
 }
 
@@ -456,6 +489,7 @@ export class DeviceRegistrationFailedError extends Error {
     this.name = 'ProvisioningRegistrationFailedError';
     this.message = message;
     Error.captureStackTrace(this, this.constructor);
+    Object.setPrototypeOf(this, DeviceRegistrationFailedError.prototype);
   }
 }
 
@@ -470,5 +504,6 @@ export class SecurityDeviceError extends Error {
     this.name = 'SecurityDeviceError';
     this.message = message;
     Error.captureStackTrace(this, this.constructor);
+    Object.setPrototypeOf(this, SecurityDeviceError.prototype);
   }
 }
