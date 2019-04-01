@@ -11,6 +11,7 @@
  */
 export class ArgumentError extends Error {
   constructor(message?: string) {
+    /* istanbul ignore next */
     super(message);
     this.name = 'ArgumentError';
     this.message = message;
@@ -28,6 +29,7 @@ export class ArgumentError extends Error {
  */
 export class ArgumentOutOfRangeError extends Error {
   constructor(message?: string) {
+    /* istanbul ignore next */
     super(message);
     this.name = 'ArgumentOutOfRangeError';
     this.message = message;
@@ -43,6 +45,7 @@ export class ArgumentOutOfRangeError extends Error {
  */
 export class DeviceMaximumQueueDepthExceededError extends Error {
   constructor(message?: string) {
+    /* istanbul ignore next */
     super(message);
     this.name = 'DeviceMaximumQueueDepthExceededError';
     this.message = message;
@@ -58,6 +61,7 @@ export class DeviceMaximumQueueDepthExceededError extends Error {
  */
 export class DeviceNotFoundError extends Error {
   constructor(message?: string) {
+    /* istanbul ignore next */
     super(message);
     this.name = 'DeviceNotFoundError';
     this.message = message;
@@ -73,6 +77,7 @@ export class DeviceNotFoundError extends Error {
  */
 export class FormatError extends Error {
   constructor(message?: string) {
+    /* istanbul ignore next */
     super(message);
     this.name = 'FormatError';
     this.message = message;
@@ -88,6 +93,7 @@ export class FormatError extends Error {
  */
 export class UnauthorizedError extends Error {
   constructor(message?: string) {
+    /* istanbul ignore next */
     super(message);
     this.name = 'UnauthorizedError';
     this.message = message;
@@ -103,6 +109,7 @@ export class UnauthorizedError extends Error {
  */
 export class NotImplementedError extends Error {
   constructor(message?: string) {
+    /* istanbul ignore next */
     super(message);
     this.name = 'NotImplementedError';
     this.message = message;
@@ -118,6 +125,7 @@ export class NotImplementedError extends Error {
  */
 export class NotConnectedError extends Error {
   constructor(message?: string) {
+    /* istanbul ignore next */
     super(message);
     this.name = 'NotConnectedError';
     this.message = message;
@@ -134,6 +142,7 @@ export class NotConnectedError extends Error {
  */
 export class IotHubQuotaExceededError extends Error {
   constructor(message?: string) {
+    /* istanbul ignore next */
     super(message);
     this.name = 'IotHubQuotaExceededError';
     this.message = message;
@@ -149,6 +158,7 @@ export class IotHubQuotaExceededError extends Error {
  */
 export class MessageTooLargeError extends Error {
   constructor(message?: string) {
+    /* istanbul ignore next */
     super(message);
     this.name = 'MessageTooLargeError';
     this.message = message;
@@ -164,6 +174,7 @@ export class MessageTooLargeError extends Error {
  */
 export class InternalServerError extends Error {
   constructor(message?: string) {
+    /* istanbul ignore next */
     super(message);
     this.name = 'InternalServerError';
     this.message = message;
@@ -179,6 +190,7 @@ export class InternalServerError extends Error {
  */
 export class ServiceUnavailableError extends Error {
   constructor(message?: string) {
+    /* istanbul ignore next */
     super(message);
     this.name = 'ServiceUnavailableError';
     this.message = message;
@@ -194,6 +206,7 @@ export class ServiceUnavailableError extends Error {
  */
 export class IotHubNotFoundError extends Error {
   constructor(message?: string) {
+    /* istanbul ignore next */
     super(message);
     this.name = 'IotHubNotFoundError';
     this.message = message;
@@ -209,6 +222,7 @@ export class IotHubNotFoundError extends Error {
  */
 export class IoTHubSuspendedError extends Error {
   constructor(message?: string) {
+    /* istanbul ignore next */
     super(message);
     this.name = 'IoTHubSuspendedError';
     this.message = message;
@@ -224,6 +238,7 @@ export class IoTHubSuspendedError extends Error {
  */
 export class JobNotFoundError extends Error {
   constructor(message?: string) {
+    /* istanbul ignore next */
     super(message);
     this.name = 'JobNotFoundError';
     this.message = message;
@@ -239,6 +254,7 @@ export class JobNotFoundError extends Error {
  */
 export class TooManyDevicesError extends Error {
   constructor(message?: string) {
+    /* istanbul ignore next */
     super(message);
     this.name = 'TooManyDevicesError';
     this.message = message;
@@ -255,6 +271,7 @@ export class TooManyDevicesError extends Error {
  */
 export class ThrottlingError extends Error {
   constructor(message?: string) {
+    /* istanbul ignore next */
     super(message);
     this.name = 'ThrottlingError';
     this.message = message;
@@ -270,6 +287,7 @@ export class ThrottlingError extends Error {
  */
 export class DeviceAlreadyExistsError extends Error {
   constructor(message?: string) {
+    /* istanbul ignore next */
     super(message);
     this.name = 'DeviceAlreadyExistsError';
     this.message = message;
@@ -285,6 +303,7 @@ export class DeviceAlreadyExistsError extends Error {
  */
 export class DeviceMessageLockLostError extends Error {
   constructor(message?: string) {
+    /* istanbul ignore next */
     super(message);
     this.name = 'DeviceMessageLockLostError';
     this.message = message;
@@ -300,6 +319,7 @@ export class DeviceMessageLockLostError extends Error {
  */
 export class InvalidEtagError extends Error {
   constructor(message?: string) {
+    /* istanbul ignore next */
     super(message);
     this.name = 'InvalidEtagError';
     this.message = message;
@@ -315,6 +335,7 @@ export class InvalidEtagError extends Error {
  */
 export class InvalidOperationError extends Error {
   constructor(message?: string) {
+    /* istanbul ignore next */
     super(message);
     this.name = 'InvalidOperationError';
     this.message = message;
@@ -330,6 +351,7 @@ export class InvalidOperationError extends Error {
  */
 export class PreconditionFailedError extends Error {
   constructor(message?: string) {
+    /* istanbul ignore next */
     super(message);
     this.name = 'PreconditionFailedError';
     this.message = message;
@@ -345,6 +367,7 @@ export class PreconditionFailedError extends Error {
  */
 export class TimeoutError extends Error {
   constructor(message?: string) {
+    /* istanbul ignore next */
     super(message);
     this.name = 'TimeoutError';
     this.message = message;
@@ -360,6 +383,7 @@ export class TimeoutError extends Error {
  */
 export class BadDeviceResponseError extends Error {
   constructor(message?: string) {
+    /* istanbul ignore next */
     super(message);
     this.name = 'BadDeviceResponseError';
     this.message = message;
@@ -376,6 +400,7 @@ export class BadDeviceResponseError extends Error {
 
 export class GatewayTimeoutError extends Error {
   constructor(message?: string) {
+    /* istanbul ignore next */
     super(message);
     this.name = 'GatewayTimeoutError';
     this.message = message;
@@ -391,6 +416,7 @@ export class GatewayTimeoutError extends Error {
  */
 export class DeviceTimeoutError extends Error {
   constructor(message?: string) {
+    /* istanbul ignore next */
     super(message);
     this.name = 'DeviceTimeoutError';
     this.message = message;
@@ -407,6 +433,7 @@ export class DeviceTimeoutError extends Error {
 export class CloudToDeviceDetachedError extends Error {
   innerError: Error;
   constructor(message?: string) {
+    /* istanbul ignore next */
     super(message);
     this.name = 'CloudToDeviceDetachedError';
     this.message = message;
@@ -423,6 +450,7 @@ export class CloudToDeviceDetachedError extends Error {
 export class DeviceMethodsDetachedError extends Error {
   innerError: Error;
   constructor(message?: string) {
+    /* istanbul ignore next */
     super(message);
     this.name = 'DeviceMethodsDetachedError';
     this.message = message;
@@ -439,6 +467,7 @@ export class DeviceMethodsDetachedError extends Error {
 export class TwinDetachedError extends Error {
   innerError: Error;
   constructor(message?: string) {
+    /* istanbul ignore next */
     super(message);
     this.name = 'TwinDetachedError';
     this.message = message;
@@ -455,6 +484,7 @@ export class TwinDetachedError extends Error {
 export class TwinRequestError extends Error {
   transportError: any;
   constructor(message?: string) {
+    /* istanbul ignore next */
     super(message);
     this.name = 'TwinRequestError';
     this.message = message;
@@ -470,6 +500,7 @@ export class TwinRequestError extends Error {
  */
 export class OperationCancelledError extends Error {
   constructor(message?: string) {
+    /* istanbul ignore next */
     super(message);
     this.name = 'OperationCancelledError';
     this.message = message;
@@ -485,6 +516,7 @@ export class OperationCancelledError extends Error {
  */
 export class DeviceRegistrationFailedError extends Error {
   constructor(message?: string) {
+    /* istanbul ignore next */
     super(message);
     this.name = 'ProvisioningRegistrationFailedError';
     this.message = message;
@@ -500,6 +532,7 @@ export class DeviceRegistrationFailedError extends Error {
  */
 export class SecurityDeviceError extends Error {
   constructor(message?: string) {
+    /* istanbul ignore next */
     super(message);
     this.name = 'SecurityDeviceError';
     this.message = message;
